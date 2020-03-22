@@ -5,7 +5,7 @@ class App < Sinatra::Base
     "Hello, World!"
   end
   
-    get '/name/:name' do
-    "Hello, World!"
+  get '/name/:name' do
+    "My name is #{params['name']}"
   end
 end
